@@ -16,7 +16,7 @@ nav {
   height: 50px;
   width: 100%;
   background: #090;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 .logo a {
   font-size: 30px;
@@ -43,7 +43,7 @@ nav {
     font-size: 20px;
   }
   .nav-link {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
