@@ -57,6 +57,7 @@ nav {
   justify-content: center;
   margin-top: 50px;
   height: 80vh;
+  width: 100%;
   text-align: center;
   background: #dce35b; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -73,8 +74,8 @@ nav {
   font-weight: bold;
 }
 .welcome-section h1 {
-  margin-top: 30px;
-  font-size: 50px;
+  margin-top: 20px;
+  font-size: 60px;
   color: #000;
   text-shadow: 2px 2px 1px #333;
   font-family: 'Josefin Sans', sans-serif;
@@ -83,6 +84,7 @@ nav {
   font-size: 20px;
   padding: 10px 20%;
   text-shadow: 1px 1px 1px #333;
+  width: 90%;
 }
 .button-container {
   margin-top: 30px;
@@ -113,10 +115,11 @@ nav {
 }
 @media screen and (max-width: 480px) {
   .welcome-section h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .welcome-section p {
     font-size: 15px;
+    width: 80%;
   }
 }
 
