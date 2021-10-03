@@ -6,13 +6,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/*---- header section -----*/
+/*---- navigation section -----*/
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 1;
   top: 0;
   height: 50px;
   width: 100%;
@@ -27,15 +26,28 @@ nav {
 }
 .logo a:hover {
   color: #900;
+  font-size: 32px;
 }
 .nav-link {
   margin: 0 10px;
   color: #333;
+  font-size: 18px;
   font-weight: bold;
 }
 .nav-link:hover {
   color: yellow;
+  font-size: 20px;
 }
+@media screen and (max-width: 480px) {
+  .logo a{
+    font-size: 20px;
+  }
+  .nav-link {
+    font-size: 10px;
+  }
+}
+
+
 
 /*---- welcome section ----*/
 .welcome-section {
@@ -44,7 +56,8 @@ nav {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  height: 70vh;
+  height: 80vh;
+  text-align: center;
   background: #dce35b; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -60,13 +73,16 @@ nav {
   font-weight: bold;
 }
 .welcome-section h1 {
+  margin-top: 30px;
   font-size: 50px;
-  color: ;
+  color: #000;
+  text-shadow: 2px 2px 1px #333;
   font-family: 'Josefin Sans', sans-serif;
 }
 .welcome-section p {
   font-size: 20px;
   padding: 10px 20%;
+  text-shadow: 1px 1px 1px #333;
 }
 .button-container {
   margin-top: 30px;
@@ -95,6 +111,16 @@ nav {
   background: #500;
   color: yellow;
 }
+@media screen and (max-width: 480px) {
+  .welcome-section h1 {
+    font-size: 20px;
+  }
+  .welcome-section p {
+    font-size: 15px;
+  }
+}
+
+
 
 /*---- what we do section ----*/
 .services {
