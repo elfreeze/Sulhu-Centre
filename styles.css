@@ -202,9 +202,11 @@ nav {
 .testimonials {
   margin: 0 auto;
   display: flex;
+  height: 40vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgb(250, 247, 247);
 }
 .testimonials h3 {
   margin: 30px auto;
@@ -212,4 +214,65 @@ nav {
 .testimonials p {
   padding: 10px 50px;
   text-align: center;
+}
+
+
+
+
+
+
+
+/*------- footer section styling --------*/
+
+footer {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 150px;
+  width: 100%;
+  background: #090;
+  border-top: 5px solid yellow;
+}
+
+footer > p {
+  margin-top: 30px;
+  color: yellow;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #1f1f1f;
+}
+.footer-btn-container {
+  margin: 30px auto;
+}
+.footer-btn {
+  padding: 10px 20px;
+  width: auto;
+  height: 50px;
+  border: 3px solid white;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-out;
+  text-shadow: 3px 3px 3px #1f1f1f;
+}
+.footer-btn a {
+  text-decoration: none;
+  color: white;
+}
+.footer-btn:hover {
+  color: #000;
+  background: #c31432;
+  transform: translateX(5px);
+  text-shadow: 3px 3px 3px #1f1f1f;
+}
+
+
+@media screen and (max-width: 480px) {
+  footer > p {
+    font-size: 15px;
+  }
 }
