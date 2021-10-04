@@ -42,11 +42,19 @@ nav {
   font-size: 20px;
 }
 @media screen and (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px auto;
+  }
   .logo a{
     font-size: 20px;
   }
   .nav-link {
-    font-size: 10px;
+    font-size: 15px;
     margin: 0 5px;
   }
 }
