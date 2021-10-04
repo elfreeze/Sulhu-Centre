@@ -54,9 +54,16 @@ nav {
     margin: 0 auto;
     margin-top: 10px;
   }
+  .logo a:hover {
+    color: #900;
+    font-size: 32px;
+  }
   .nav-link {
     font-size: 12px;
     margin: 0 5px 10px 5px;
+  }
+  .nav-link:hover {
+    font-size: 15px;
   }
 }
 
@@ -146,7 +153,7 @@ nav {
   height: 100vh;
   width: 100%;
   text-align: center;
-  border-bottom: 5px solid #a70505;
+  
 }
 .services h2 {
   font-size: 40px;
@@ -216,12 +223,13 @@ nav {
   margin: 0 auto;
   height: 50vh;
   background: rgb(250, 247, 247);
+  border-top: 5px solid #a70505;
 }
 .testimonials h3 {
   margin: 20px auto;
   font-size: 25px;
   border-bottom: 5px solid #a70505;
-  width: 70%;
+  width: 60%;
   text-align: center;
 }
 .testimonials p {
