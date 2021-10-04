@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Ephesis&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Raleway:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /*---- navigation section -----*/
@@ -20,7 +22,7 @@ nav {
 }
 .logo a {
   font-size: 30px;
-  color: yellow;
+  color: #e0e00a;
   font-family: 'Calligraffitti', cursive;
   font-weight: bolder;
 }
@@ -31,11 +33,12 @@ nav {
 .nav-link {
   margin: 0 10px;
   color: #333;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
 .nav-link:hover {
-  color: yellow;
+  color: #e0e00a;
   font-size: 20px;
 }
 @media screen and (max-width: 480px) {
@@ -43,7 +46,7 @@ nav {
     font-size: 20px;
   }
   .nav-link {
-    font-size: 8px;
+    font-size: 10px;
     margin: 0 5px;
   }
 }
@@ -79,13 +82,13 @@ nav {
   font-size: 60px;
   color: #000;
   text-shadow: 2px 2px 1px #333;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .welcome-section p {
   font-size: 20px;
-  padding: 10px 20%;
+  padding: 10px 10%;
   text-shadow: 1px 1px 1px #333;
-  width: 90%;
+  width: 100%;
 }
 .button-container {
   margin-top: 30px;
@@ -95,35 +98,38 @@ nav {
   margin: 10px 10px;
   height: 40px;
   width: 250px;
-  border: 0 solid yellow;
+  border: 2px solid #e0e00a;
   font-size: 15px;
   border-radius: 60px;
   color: #fff;
+  transition: transform 0.3s ease-in;
 }
 .btn1 {
   background: #00aa00;
 }
 .btn1:hover {
   background: #030;
-  color: yellow;
+  color: #e0e00a;
+  transform: translateY(8px);
 }
 .btn2 {
   background: #aa0000;
 }
 .btn2:hover {
   background: #500;
-  color: yellow;
+  color: #e0e00a;
+  transform: translateY(8px);
 }
 @media screen and (max-width: 480px) {
   .welcome-section h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
-  .welcome-section p {
-    font-size: 15px;
+.welcome-section p {
+    font-size: 20px;
+    padding: 10px 10px;
     width: 90%;
-  }
 }
-
+}
 
 
 /*---- what we do section ----*/
@@ -131,23 +137,28 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  height: 100vh;
   width: 100%;
   text-align: center;
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid #a70505;
 }
 .services h2 {
+  font-size: 40px;
   margin: 10px auto;
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid #a70505;
+  width: 80%;
+}
+.services p {
+  margin: 10px auto;
   width: 80%;
 }
 .grid-container {
   display: grid;
+  height: 60vh;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
-  margin: 50px 10%;
+  margin: 10px auto;
 }
 .grid-column {
   display: flex;
@@ -169,16 +180,9 @@ nav {
   margin: 20px auto;
 }
 @media screen and (max-width: 480px) {
-  .services {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    width: 100%;
-    text-align: center;
-    border-bottom: 5px solid yellow;
-  }
   .services h2 {
+    font-size: 20px;
     margin: 10px auto;
-    border-bottom: 5px solid yellow;
     width: 80%;
   }
   .grid-container {
@@ -202,14 +206,14 @@ nav {
 .testimonials {
   margin: 0 auto;
   display: flex;
-  height: 40vh;
+  height: 50vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgb(250, 247, 247);
 }
 .testimonials h3 {
-  margin: 30px auto;
+  margin: 20px auto;
 }
 .testimonials p {
   padding: 10px 50px;
@@ -263,16 +267,18 @@ footer > p {
   text-decoration: none;
   color: white;
 }
+
+/*
 .footer-btn:hover {
   color: #000;
   background: #c31432;
   transform: translateX(5px);
   text-shadow: 3px 3px 3px #1f1f1f;
 }
-
+*/
 
 @media screen and (max-width: 480px) {
   footer > p {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
